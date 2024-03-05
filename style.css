@@ -28,6 +28,7 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.384);
     position: fixed;
     z-index: 9999;
+    backdrop-filter: blur;
 }
 .bgnav{
     background-color: black;
@@ -77,6 +78,11 @@ body{
 .hero-content h1{
     font-size: 100px;
     margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.hero-content h1:hover{
+    font-size: 120px;
+    margin-bottom: 30px;
 }
 .hero-content p{
     color: rgba(255, 255, 255, 0.543);
@@ -105,7 +111,7 @@ body{
 }
 .hero-img{
     width: 400px;
-
+    position:relative;
 }
 .hero-img img{
     width: 90%;
@@ -187,7 +193,6 @@ body{
 }
 .about_img img:hover{
     -webkit-filter: grayscale(0%);
-    transition: all .5s ease-in-out;
 
 }
 .about_info{
