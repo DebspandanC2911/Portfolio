@@ -36,4 +36,4 @@ Feel free to explore the website and provide any feedback or suggestions for imp
 
 ## Link to the published website
 
-Click Here to go to my [Portfolio][https://debspandanc2911.github.io/Portfolio/]
+Click Here to go to my [Portfolio](https://debspandanc2911.github.io/Portfolio/)
