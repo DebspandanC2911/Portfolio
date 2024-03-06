@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">   
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>  
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <div class="navbar" id="navbar">
@@ -213,6 +213,14 @@
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+
+        let docTitle= document.title;
+        window.addEventListener("blur",() => {
+            document.title = "Come Back Here";
+        });
+        window.addEventListener("focus",() =>{
+            document.title=docTitle;
+        });
 
       let nav = document.querySelector("#navbar")
       window.addEventListener("scroll",function(){
