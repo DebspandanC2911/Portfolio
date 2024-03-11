@@ -32,12 +32,13 @@
         <h1 class="bgtext">Developer</h1>
         <div class="hero-content">
         <h1>Software Developer</h1>
-        <p>Debspandan Chakraborty</p><br>
+        <p>Debspandan Chakraborty</p>
+        <br>
+        <p id="visitor-count">Total visitors: 0</p>
         </div>
         <div class="hero-img">
             <img src="img/profilewbg.png" alt="">
         </div>
-        
     </div>
     <div class="iconbox">
         <p><a href="https://github.com/DebspandanC2911">GitHub</a></p>
@@ -213,6 +214,24 @@
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+
+
+let count = localStorage.getItem('visitorCount');
+
+// If not, initialize the count to 0
+if (!count) {
+    count = 0;
+} else {
+    // Otherwise, convert the count from string to integer
+    count = parseInt(count);
+}
+
+// Update the visitor count in the HTML
+document.getElementById('visitor-count').textContent = 'Total visitors: ' + count;
+
+// Increment the count for each visit and update localStorage
+count++;
+localStorage.setItem('visitorCount', count);
 
         let docTitle= document.title;
         window.addEventListener("blur",() => {
