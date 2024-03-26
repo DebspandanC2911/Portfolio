@@ -12,12 +12,16 @@
     <title>Portfolio</title>
 </head>
 <body>
+        
     <div class="navbar" id="navbar">
         <div class="bars" id="bars">
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="logo">
-            <a href="#"><img src="img/DC.jpg" alt="DevsCode Portfolio"></a>
+            <a href="#"><div class="spinner">
+                <div class="spinner1"></div>
+        </div>
+            </a>
         </div>
         <ul id="menu" class="menu">
             <li>
@@ -229,9 +233,8 @@
             </div>
             <textarea name="Text" id="" cols="30" rows="10" placeholder="Message" name="TEXT" required></textarea>
             <button><span class="text">Submit</span><span>Thanks!</span></button>
-        </div>
             </form>
-            
+        </div> 
      </div>
 
      <footer>
@@ -247,6 +250,18 @@
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+
+            // Function to delay loading and display loading screen
+window.onload = function() {
+  var loadingScreen = document.getElementById("loadingScreen");
+  var mainContent = document.getElementById("body");
+
+  // Hide loading screen and show main content after delay
+  setTimeout(function() {
+    loadingScreen.style.display = "none";
+    mainContent.style.display = "block";
+  }, 3000); // Adjust delay time (in milliseconds) as needed
+};
 
         let docTitle= document.title;
         window.addEventListener("blur",() => {
